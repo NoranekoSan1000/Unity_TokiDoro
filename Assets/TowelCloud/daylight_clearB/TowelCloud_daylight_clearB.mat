@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TowelCloud_daylight_clearB
+  m_Shader: {fileID: 4800000, guid: cc96437f2fe78044bb4d16eb33265c94, type: 3}
+  m_ShaderKeywords: _FACEWIND_ON _GROUNDFILL_ON _SCATTERING_ON _UNDERFADE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _cloudColor:
+        m_Texture: {fileID: 2800000, guid: b744d1029882b83489ef74835a5146ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _cloudMap:
+        m_Texture: {fileID: 2800000, guid: 8dcca5bd441d347499902db8e4d4473d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _color:
+        m_Texture: {fileID: 2800000, guid: 8486e2bb3baa0a245af8280adbf3c50d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _noiseMap:
+        m_Texture: {fileID: 2800000, guid: 1aa7c20b98a8cfb4ca7608299dbe3a3a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _rimMap:
+        m_Texture: {fileID: 2800000, guid: 49a4a27d88c1faf47b4624f0c4fce688, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _skyColor:
+        m_Texture: {fileID: 2800000, guid: 7f5268970ed41c24dbb29bb6e50b43a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _skyMap:
+        m_Texture: {fileID: 2800000, guid: dcfa1e06427904d44b0ffc83df868dc0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ForObject: 0
+    - _TRANSPARENT: 1
+    - _Transparent: 0
+    - _alphaRate: 1
+    - _boost: 1
+    - _chine: 0.5
+    - _cloudFogLength: 0.2
+    - _cloudy: 0.38
+    - _cloudySoft: 0.1
+    - _debug: 1
+    - _debugInput: 2
+    - _debugInput0: 0
+    - _debugInput1: 0
+    - _debugInput2: 1.5
+    - _faceWind: 1
+    - _faceWindForce: 0.15
+    - _faceWindForce_parameter: 0.6
+    - _faceWindMove: 3
+    - _faceWindMoveSlide: 1.5
+    - _faceWindScale: 0.015
+    - _faceWindScale_parameter: 1.5
+    - _farMixLength: 0.128
+    - _farMixRate: 0.616
+    - _farWindBottomEnd: -0.1
+    - _farWindBottomStart: 0.1
+    - _farWindDivision: 35
+    - _farWindForce: 1
+    - _farWindForce_parameter: 1
+    - _farWindMove: 1
+    - _farWindScale: 1
+    - _farWindTopEnd: 0.5
+    - _farWindTopStart: 0.3
+    - _fbmScaleUnder: 0.45
+    - _groundFill: 1
+    - _moveRotation: 0
+    - _rimForce: 0.5
+    - _rimNarrow: 1
+    - _rotateY: 0
+    - _rotateZ: 45
+    - _roundness: 0.635
+    - _roundnessFront: 0.317
+    - _roundnessSide: 0.183
+    - _scale: 50
+    - _scattering: 1
+    - _scatteringForce: 0.44
+    - _scatteringNarrow: 1
+    - _scatteringPassRate: 0.33
+    - _scatteringRange: 0.391
+    - _shapeSpeed: 0.1
+    - _shapeSpeed_parameter: 1
+    - _skyEffectRate: 0.588
+    - _skyTransParent: 0
+    - _skyTransparent: 0
+    - _soft: 0.301
+    - _softDecayArea: 0
+    - _softDecayPower: 0
+    - _speed: 0.1
+    - _speedOffset: 1
+    - _speedSlide: 0.1
+    - _speed_parameter: 1
+    - _stream: 0
+    - _streamForce: 1
+    - _streamMove: 1.5
+    - _streamScale: 0.5
+    - _turbulence: 0
+    - _turbulenceForce: 2
+    - _turbulenceMove: 1
+    - _turbulenceScale: 0.5
+    - _underFade: 1
+    - _underFadeStart: -0.3
+    - _underFadeWidth: 0.2
+    - _yMirror: 0
+    m_Colors:
+    - _cloudFogColor: {r: 1, g: 1, b: 1, a: 0.101960786}
+    - _groundFillColor: {r: 0.12999997, g: 0.10999996, b: 0.09999997, a: 1}
+    - _scatteringColor: {r: 1, g: 1, b: 1, a: 1}
