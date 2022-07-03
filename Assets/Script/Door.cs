@@ -70,6 +70,11 @@ public class Door : MonoBehaviour
                 Status.WarpArea3 = true;
                 falsee();
             }
+            if (DoorLv == 22)
+            {
+                Status.WarpArea4 = true;
+                falsee();
+            }
         }
 
     }
@@ -101,6 +106,7 @@ public class Door : MonoBehaviour
             if (DoorLv == 8) Status.TwTextStr = "配膳用エレベーター\nQキーを押して1階に行く";
             if (DoorLv == 21 && KinkoKey) Status.TwTextStr = "Qキーを押して開く";
             else if (DoorLv == 21 && !KinkoKey) Status.TwTextStr = "金庫の鍵が必要";
+            if (DoorLv == 22) Status.TwTextStr = "Qキーを押して\nはしごをのぼる";
 
             //Hint
             if (DoorLv == 9) Status.TwTextStr = "この館の地下には箱が大量に置かれていた。\nこの建物の構造と箱の配置から違和感を抱いたのは私だけだろうか？隠し部屋がある可能性はないか・・・？";

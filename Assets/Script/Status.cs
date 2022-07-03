@@ -46,6 +46,7 @@ public class Status : MonoBehaviour
     public static bool WarpArea = false;
     public static bool WarpArea2 = false;
     public static bool WarpArea3 = false;
+    public static bool WarpArea4 = false;
 
     public bool Tutorial = false;
 
@@ -83,6 +84,7 @@ public class Status : MonoBehaviour
         WarpArea = false;
         WarpArea2 = false;
         WarpArea3 = false;
+        WarpArea4 = false;
         FadeController.FadeoutStart = false;
         FadeController.isFadeOut = true;
         GoResultBool = false;
@@ -296,6 +298,11 @@ public class Status : MonoBehaviour
         {
             this.gameObject.transform.position = new Vector3(111.786f, 100.65f, 186.1046f);
             WarpArea3 = false;
+        }
+        if(WarpArea4)
+        {
+            this.gameObject.transform.position = new Vector3(189.5182f, 161.4096f, 211.655f);
+            WarpArea4 = false;
         }
     }
 
