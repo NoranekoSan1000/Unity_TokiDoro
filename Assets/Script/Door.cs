@@ -32,7 +32,7 @@ public class Door : MonoBehaviour
             if (DoorLv <= Status.OpenKeyLV)
             {
                 OpenNow = true;
-                this.gameObject.SetActive(false);
+
                 falsee();
             }
             if (DoorLv == 4 && TokeiKey)//ŽžŒv“ƒ
