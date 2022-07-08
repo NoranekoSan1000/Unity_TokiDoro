@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class DoorMove : MonoBehaviour
 {
-    HingeJoint hj;
-    JointLimits limits;
-
     bool IsMove = false;
+    float Rotate = 2f;
+    float RoTimer = 0f;
+    int Counter = 0;
+
+    /*HingeJoint hj;
+    JointLimits limits;
 
     // Start is called before the first frame update
     void Start()
@@ -35,18 +38,29 @@ public class DoorMove : MonoBehaviour
         limits.bounciness = 0f;
         hj.limits = limits;
         
+    }*/
+
+    void Start()
+    {
+        IsMove = false;
+    }
+    void Update()
+    {
+        if(IsMove) RoTimer += Time.deltaTime;
+
+        if (RoTimer >= 0.01 && Counter <=45)
+        {
+            Debug.Log(Counter);
+            this.gameObject.transform.Rotate(0, Rotate, 0);
+            Counter++;
+            RoTimer = 0;
+            
+        }
     }
 
     void OnTriggerStay(Collider other)
     {
         if(Input.GetKeyDown(KeyCode.Q)) IsMove = true;
-        Debug.Log(IsMove);
     }
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
 
-        }
-    }
 }
