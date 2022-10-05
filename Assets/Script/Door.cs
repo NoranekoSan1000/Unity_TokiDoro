@@ -15,6 +15,8 @@ public class Door : MonoBehaviour
     public static bool DInArea = false;//Status‚ÅØ‚è‘Ö‚¦ŠÇ——p
     bool InArea = false;
 
+    bool AlreadyOpen = false;
+
     void Start()
     {
         OpenNow = false;
@@ -32,25 +34,25 @@ public class Door : MonoBehaviour
             if (DoorLv <= Status.OpenKeyLV)
             {
                 OpenNow = true;
-
+                AlreadyOpen = true;
                 falsee();
             }
             if (DoorLv == 4 && TokeiKey)//Œv“ƒ
             {
                 OpenNow = true;
-                this.gameObject.SetActive(false);
+                AlreadyOpen = true;
                 falsee();
             }
             if (DoorLv == 5 && HeyaKey)//“–å‚Ì•”‰®
             {
                 OpenNow = true;
-                this.gameObject.SetActive(false);
+                AlreadyOpen = true;
                 falsee();
             }
             if (DoorLv == 21 && KinkoKey)//‹àŒÉ
             {
                 OpenNow = true;
-                this.gameObject.SetActive(false);
+                AlreadyOpen = true;
                 falsee();
             }
 
